@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор с историей</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="input" class="input" readonly>
+        <div class="digits">
+            <button onclick="add('1')" class="button">1</button>
+            <button onclick="add('2')" class="button">2</button>
+            <button onclick="add('3')" class="button">3</button><br>
+            <button onclick="add('4')" class="button">4</button>
+            <button onclick="add('5')" class="button">5</button>
+            <button onclick="add('6')" class="button">6</button><br>
+            <button onclick="add('7')" class="button">7</button>
+            <button onclick="add('8')" class="button">8</button>
+            <button onclick="add('9')" class="button">9</button><br>
+            <button onclick="add('0')" class="button">0</button>
+        </div>
+        <div class="operations">
+            <button onclick="add('+')" class="button">+</button><br>
+            <button onclick="add('-')" class="button">-</button><br>
+            <button onclick="add('*')" class="button">*</button><br>
+            <button onclick="add('/')" class="button">/</button><br>
+            <button onclick="calculate()" class="button">=</button>
+        </div>
+        <div id="history" class="history">История вычислений: <br></div>
+    </div>
+</body>
+</html>
